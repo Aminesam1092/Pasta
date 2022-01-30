@@ -2,6 +2,7 @@
 @use "scss/mixin/breakpoint"as break;
 @use "scss/setting/variables"as v;
 @use "scss/base/base"as b;
+@use "scss/mixin/font"as f;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=PT+Serif:wght@700&family=The+Nautigal:wght@700&display=swap');
 
 .MainPrimary {
@@ -23,26 +24,114 @@
 
         .Header__Container {
             width: 100%;
-            height: 100vh;
             text-align: center;
-            align-items: center;
-
-            .Header__title {
-                margin: 0 auto;
-                font-size: v.$headdingfont-size;
-                font-family: 'The Nautigal', cursive;
-                font-weight: v.$basefontwight;
-            }
-
-            .Header__Snslink {
-                display: flex;
-                list-style: none;
-                justify-content: center;
-            }
-
-            .Snslink {
-                margin: 0 10px;
-            }
+            opacity: 0;
         }
+
+        &__title {
+            margin: 0 auto;
+            font-size: 7rem;
+            font-family: f.$engfontfamily;
+            font-weight: v.$basefontwight;
+        }
+
+        &__Snslink {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Snslink {
+            margin: 0 10px;
+        }
+    }
+
+    .Productntroduction {
+        width: 100%;
+        font-family: f.$jafontfamily;
+        margin-top: 500px;
+
+        &__Headdingtext {
+            font-size: f.$headdingfont-size;
+            margin-left: 10%;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            opacity: 0;
+        }
+
+        &__Auxiliarysentence {
+            font-size: f.$textfont-size;
+            margin-left: 10%;
+            opacity: 0;
+        }
+
+        .AuxiliaryImage {
+            width: 50%;
+            height: 50%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 30px;
+            box-shadow: 0px 0px 50px rgb(255, 227, 212);
+            opacity: 0;
+        }
+    }
+
+    .Menu {
+        width: 100%;
+        font-family: f.$jafontfamily;
+
+        &__Headdingtext {
+            width: 280px;
+            font-size: f.$headdingfont-size;
+            margin-left: 10%;
+            border-bottom: solid 5px rgb(255, 227, 212);
+        }
+
+        &__Prodcut {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        &__Conteiner {
+            width: 600px;
+            margin: 50px 0;
+            display: block;
+            text-align: center;
+        }
+
+        .ProductImage {
+            width: 70%;
+            height: 70%;
+            border-radius: 20px;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .ProductImage:hover {
+            border-radius: 50px;
+            opacity: 0.75;
+        }
+
+        &__ProdcutName {
+            font-size: 25px;
+        }
+
+        &__price {
+            font-size: f.$menufont-size;
+            font-weight: 600;
+        }
+
+        &__InductionLink {
+            font-size: f.$menufont-size;
+            font-weight: 600;
+        }
+    }
+    .Uber__Link {
+        color: red;
     }
 }
