@@ -145,12 +145,12 @@
                 width: 90%;
                 height: 90%;
             }
+            &:hover {
+                border-radius: 50px;
+                opacity: 0.75;
+            }
         }
 
-        .ProductImage:hover {
-            border-radius: 50px;
-            opacity: 0.75;
-        }
 
         &__ProdcutName {
             font-size: 25px;
