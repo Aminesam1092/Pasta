@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@use "scss/mixin/breakpoint"as break;
+@use "scss/setting/variables"as v;
+@use "scss/base/base"as b;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=PT+Serif:wght@700&family=The+Nautigal:wght@700&display=swap');
+
+.MainPrimary {
+    background-color: v.$base-maincolor;
+
+    .Header {
+        width: 100%;
+
+        &__TopImage {
+            width: 100%;
+            height: 100vh;
+            background-image: url(/Webp/PastaTopView.webp);
+            background-attachment: fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .Header__Container {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            align-items: center;
+
+            .Header__title {
+                margin: 0 auto;
+                font-size: v.$headdingfont-size;
+                font-family: 'The Nautigal', cursive;
+                font-weight: v.$basefontwight;
+            }
+
+            .Header__Snslink {
+                display: flex;
+                list-style: none;
+                justify-content: center;
+            }
+
+            .Snslink {
+                margin: 0 10px;
+            }
+        }
+    }
+}
