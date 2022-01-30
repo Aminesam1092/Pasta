@@ -3,6 +3,7 @@
 @use "scss/setting/variables"as v;
 @use "scss/base/base"as b;
 @use "scss/mixin/font"as f;
+@use "scss/mixin/animation" as a;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=PT+Serif:wght@700&family=The+Nautigal:wght@700&display=swap');
 
 .MainPrimary {
@@ -83,9 +84,11 @@
 
         &__Headdingtext {
             width: 280px;
+            margin-top: 500px;
             font-size: f.$headdingfont-size;
             margin-left: 10%;
             border-bottom: solid 5px rgb(255, 227, 212);
+            opacity: 0;
         }
 
         &__Prodcut {
@@ -93,6 +96,8 @@
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
+            transition: opacity 0.3s ease;
+            opacity: 0;
         }
 
         &__Conteiner {
@@ -106,10 +111,10 @@
             width: 70%;
             height: 70%;
             border-radius: 20px;
-            -webkit-transition: all 0.3s ease;
-            -moz-transition: all 0.3s ease;
-            -o-transition: all 0.3s ease;
-            transition: all 0.3s ease;
+            -webkit-transition: a.$transition3s;
+            -moz-transition:a.$transition3s;
+            -o-transition: a.$transition3s;
+            transition: a.$transition3s;
         }
 
         .ProductImage:hover {
@@ -133,5 +138,38 @@
     }
     .Uber__Link {
         color: red;
+    }
+    .Access{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        font-family: f.$jafontfamily;
+        &__Headdingtext{
+            width: 300px;
+            font-size: f.$headdingfont-size;
+            margin-left: 10%;
+            border-bottom: solid 5px rgb(255, 227, 212);
+            opacity: 0;
+        }
+        &__Map{
+            display: block;
+            width: 100%;
+            margin: 50px auto;
+        }
+    }
+    .Footer{
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        &__Title{
+            font-size: 7rem;
+            font-family: f.$engfontfamily;
+            font-weight: v.$basefontwight;
+        }
+        &__Copylight{
+            font-size: 3rem;
+            font-family: f.$engfontfamily;
+            font-weight: v.$basefontwight;
+        }
     }
 }

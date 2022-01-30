@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/main.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
     <title>Pasta</title>
 </head>
 
@@ -16,17 +18,87 @@
             <nav class="Header__Container">
                 <h1 class="Header__title">Delicious Pasta</h1>
                 <ul class="Header__Snslink">
-                    <li class="Header__Instaglam Snslink"><img src="SVG/logo-instagram.svg" width="25" height="25"
-                            alt=""></li>
-                    <li class="Header__Facebook Snslink"><img src="SVG/logo-facebook.svg" width="25" height="25" alt="">
-                    </li>
+                    <li class="Header__Instaglam Snslink"><a class="Header__Link" href="https://www.instagram.com/"><img
+                                src="SVG/logo-instagram.svg" width="25" height="25" alt=""></li></a>
+                    <li class="Header__Facebook Snslink"><a class="Header__Link"
+                            href="https://www.facebook.com/campaign/landing.php?campaign_id=1665596389&extra_1=s%7Cc%7C321610682049%7Ce%7Cfacebook%7C&placement=&creative=321610682049&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1665596389%26adgroupid%3D65075436220%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028853%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D"><img
+                                src="SVG/logo-facebook.svg" width="25" height="25" alt="">
+                    </li></a>
                 </ul>
             </nav>
         </header>
-        <section>
-
+        <section class="Productntroduction">
+            <h1 class="Productntroduction__Headdingtext">心と体にたくさんの栄養をお届けするパスタ専門店。</h1>
+            <p class="Productntroduction__Auxiliarysentence">食材にこだわった自慢の料理とともにお楽しみいただけます。</p>
+            <p class="Productntroduction__Auxiliarysentence">ランチやディナーといったひと時を過ごしたいときにもこだわりの逸品をあなたに。</p>
+            <h1 class="Productntroduction__AuxiliaryImage"><img class="AuxiliaryImage" src="Webp/AuxiliaryImage.webp"
+                    width="5006" height="3403" alt=""></h1>
         </section>
+        <article class="Menu">
+            <h1 class="Menu__Headdingtext">Menu / メニュー</h1>
+            <section class="Menu__Prodcut">
+                <section class="Menu__Conteiner">
+                    <h1 class="Menu__ProdcutImage"><img class="ProductImage" src="Webp/Menu/Arrabiata.webp" width="2464"
+                            height="1632" alt=""></h1>
+                    <p class="Menu__ProdcutName">アラビアータ</p>
+                    <p class="Menu__price">￥643（税込み）</p>
+                    <aside class="Menu__InductionLink">デリバリー注文は<span class="TextChangecolor"><a
+                                href="https://www.ubereats.com/jp" class="Uber__Link">こちら</a>から</span></aside>
+                </section>
+                <section class="Menu__Conteiner">
+                    <h1 class="Menu__ProdcutImage"><img class="ProductImage" src="Webp/Menu/GreenPasta.webp"
+                            width="2464" height="1632" alt=""></h1>
+                    <p class="Menu__ProdcutName">グリーンパスタ</p>
+                    <p class="Menu__price">￥670（税込み）</p>
+                    <aside class="Menu__InductionLink">デリバリー注文は<span class="TextChangecolor"><a
+                                href="https://www.ubereats.com/jp" class="Uber__Link">こちら</a>から</span></aside>
+                </section>
+                <section class="Menu__Conteiner">
+                    <h1 class="Menu__ProdcutImage"><img class="ProductImage" src="Webp/Menu/Fettuccine.webp"
+                            width="2464" height="1632" alt=""></h1>
+                    <p class="Menu__ProdcutName">ミートソースフェットチーネ</p>
+                    <p class="Menu__price">￥570（税込み）</p>
+                    <aside class="Menu__InductionLink">デリバリー注文は<span class="TextChangecolor"><a
+                                href="https://www.ubereats.com/jp" class="Uber__Link">こちら</a>から</span></aside>
+                </section>
+                <section class="Menu__Conteiner">
+                    <h1 class="Menu__ProdcutImage"><img class="ProductImage" src="Webp/Menu/Carbonara.webp" width="2464"
+                            height="1632" alt=""></h1>
+                    <p class="Menu__ProdcutName">厚切りベーコンのカルボナーラ</p>
+                    <p class="Menu__price">￥820（税込み）</p>
+                    <aside class="Menu__InductionLink">デリバリー注文は<span class="TextChangecolor"><a
+                                href="https://www.ubereats.com/jp" class="Uber__Link">こちら</a>から</span></aside>
+                </section>
+                <section class="Menu__Conteiner">
+                    <h1 class="Menu__ProdcutImage"><img class="ProductImage" src="Webp/Menu/Vongole Ango.webp"
+                            width="2464" height="1632" alt=""></h1>
+                    <p class="Menu__ProdcutName">ボンゴレビアンコ</p>
+                    <p class="Menu__price">￥720（税込み）</p>
+                    <aside class="Menu__InductionLink">デリバリー注文は<span class="TextChangecolor"><a
+                                href="https://www.ubereats.com/jp" class="Uber__Link">こちら</a>から</span></aside>
+                </section>
+                <section class="Menu__Conteiner">
+                    <h1 class="Menu__ProdcutImage"><img class="ProductImage"
+                            src="Webp/Menu/Mozzarellacheesetomato pasta.webp" width="2464" height="1632" alt=""></h1>
+                    <p class="Menu__ProdcutName">モッツァレラチーズトマトパスタ</p>
+                    <p class="Menu__price">￥860（税込み）</p>
+                    <aside class="Menu__InductionLink">デリバリー注文は<span class="TextChangecolor"><a
+                                href="https://www.ubereats.com/jp" class="Uber__Link">こちら</a>から</span></aside>
+                </section>
+            </section>
+        </article>
+        <article class="Access">
+            <h1 class="Access__Headdingtext">Access / アクセス</h1>
+            <iframe class="Access__Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.281747010999!2d139.6952407156295!3d35.64542943954145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b4eb8eb9aeb%3A0xf0bd039f50b00acc!2z44CSMTUzLTAwNTEg5p2x5Lqs6YO955uu6buS5Yy65LiK55uu6buS77yT5LiB55uu77yR4oiS77ySIOODj-OCpuOCueOCu-ODs-OCv-ODvOS4reebrum7kuODk-ODqyAxZg!5e0!3m2!1sja!2sjp!4v1643545300236!5m2!1sja!2sjp"
+                width="900" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </article>
+        <footer class="Footer">
+            <h1 class="Footer__Title">Delicious Pasta</h1>
+            <p class="Footer__Copylight">2022 1/30 this web site made by doublaliamine</p>
+        </footer>
     </main>
+    <script src="JS/TriggerJS/Scrolltrigger.js"></script>
 </body>
 
 </html>

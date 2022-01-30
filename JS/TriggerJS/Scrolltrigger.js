@@ -38,3 +38,42 @@ gsap.to(".AuxiliaryImage", {
     },
     opacity: 1,
 });
+gsap.to(".Menu__Headdingtext", {
+    scrollTrigger: {
+        trigger: ".Menu__Headdingtext",
+        start: "center center",
+        end: '+=1500',
+        scrub: true,
+        pin: true,
+    },
+    opacity: 1,
+});
+gsap.to(".Menu__Prodcut", {
+    scrollTrigger: {
+        trigger: ".Menu__Prodcut",
+        start: "top center",
+        end: 'bottom center',
+    },
+    opacity: 1,
+});
+
+gsap.to(".Access__Headdingtext", {
+    scrollTrigger: {
+        trigger: ".Access__Headdingtext",
+        start: "center center",
+        end: '+=1500',
+        scrub: true,
+        pin: true,
+    },
+    opacity: 1,
+});
+gsap.to(".Footer", {
+    scrollTrigger: {
+        trigger: ".Footer",
+        start: "center center",
+        end: '+=1500',
+        scrub: true,
+        pin: true,
+    },
+    opacity: 1,
+});
