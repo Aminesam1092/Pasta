@@ -183,6 +183,10 @@
             margin-left: 10%;
             border-bottom: solid 5px rgb(255, 227, 212);
             opacity: 0;
+            @include break.breakpoint(smartphone) {
+               margin-left: 0px;
+               margin: 0 auto;
+            }
         }
 
         &__Map {
