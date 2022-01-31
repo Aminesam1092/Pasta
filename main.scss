@@ -15,7 +15,7 @@
         &__TopImage {
             width: 100%;
             height: 100vh;
-            background-image: url(/Webp/PastaTopView.webp);
+            background-image: url(../Webp/PastaTopView.webp);
             background-attachment: fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -93,6 +93,10 @@
                 width: 80%;
                 height: 80%;
             }
+            @include break.breakpoint(tablet) {
+                width: 80%;
+                height: 80%;
+            }
         }
     }
 
@@ -111,6 +115,10 @@
             border-bottom: solid 5px rgb(255, 227, 212);
             opacity: 0;
             @include break.breakpoint(smartphone) {
+                margin-left: 0;
+                margin: 0 auto;
+            }
+            @include break.breakpoint(tablet) {
                 margin-left: 0;
                 margin: 0 auto;
             }
@@ -142,6 +150,10 @@
             -o-transition: a.$transition3s;
             transition: a.$transition3s;
             @include break.breakpoint(smartphone) {
+                width: 90%;
+                height: 90%;
+            }
+            @include break.breakpoint(tablet) {
                 width: 90%;
                 height: 90%;
             }
@@ -187,6 +199,10 @@
                margin-left: 0px;
                margin: 0 auto;
             }
+            @include break.breakpoint(tablet) {
+                margin-left: 0px;
+                margin: 0 auto;
+             }
         }
 
         &__Map {
