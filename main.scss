@@ -22,7 +22,7 @@
             -o-background-size: cover;
             background-size: cover;
             @include break.breakpoint(tablet) {
-                width: 100%;
+                display: none;
             }
             @include break.breakpoint(smartphone) {
                 display: none;
