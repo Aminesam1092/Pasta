@@ -33,6 +33,9 @@
             width: 100%;
             text-align: center;
             opacity: 0;
+            @include break.breakpoint(tablet) {
+                opacity: 1;
+            }
             @include break.breakpoint(smartphone) {
                 opacity: 1;
             }
